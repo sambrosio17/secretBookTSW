@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	font-family: montserrat;
+}
+
+.outerDiv {
+	width: 100%;
+	
+}
+
+.fatturaSpace {
+	width: 60%;
+	margin: 0.5% auto ;
+	background:rgba(215,215,215,1.00);
+}
+
+.innerFattura {
+	width: 98%;
+	margin: 0.5%;
+	padding: 0.5%;
+}
+
+.innerFattura h1 {
+	margin: 0;
+}
+
+
+.line {
+	background: #23313e;
+	color: white;
+	text-align: center;
+	padding-top: 5.5px;
+	padding-bottom: 2.5px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+.dataDiv:nth-of-type(odd)::after{
+	content: "";
+	display: table;
+	clear: both;
+	
+}
+
+.dataDiv::before{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.fatturaIntestazione {
+	text-transform: uppercase;
+}
+
+.dataDiv:nth-of-type(3) {
+	text-align: right;
+	
+}
+
+
+.dataDiv {
+	width: 50%;
+	float: left;
+
+	margin-top:1%;
+	margin-bottom:1%;
+	overflow: hidden;
+	
+}
+
+
+.dataDiv h1,h5 {
+	margin: 0;
+}
+
+
+.itemTable {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	margin: 20px auto;
+}
+.itemTable th {
+	background: #23313e;
+	text-transform: uppercase;
+	color: white;
+}
+
+.itemTable td {
+	border-bottom: 1px solid black;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+	border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+	  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+	border-radius: 30px;
+}
+
+
+
+.fatturaInfo {
+	clear: both;
+	overflow-y: auto;
+	border-bottom: 1px solid black;
+}
+
+
+.fatturaInfo h1,h3 {
+	margin: 0;
+	text-align: right;
+	
+}
+
+button {
+	display: block;
+	width: 30%;
+	margin: 0.5em auto;
+	padding: 1%;
+	border: none;
+	background: rgba(35,49,62,1.00);
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background:rgba(13,200,209,1.00);
+	transition: 0.1s ease;
+}
+
+@media print {
+	
+	button {
+		display: none;
+	}
+	
+	.fatturaSpace{
+		width: 100%;
+		background: rgba(215,215,215,1.00);
+	}
+}
