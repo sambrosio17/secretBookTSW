@@ -52,3 +52,4 @@ public class Quote {
 	}
 
 }
+//Untangled partizione: 1
