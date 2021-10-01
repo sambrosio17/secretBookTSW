@@ -68,3 +68,4 @@ public class ProductPictureServlet extends HttpServlet {
 	}
 
 }
+//Untangled partizione: 10
