@@ -12,4 +12,4 @@ public interface Model {
 	
 	public Collection<Product> doRetrieveAll(String order) throws SQLException;
 }
-//Untangled partizione: 17
+//Untangled partizione: 17//Untangled partizione: 5
